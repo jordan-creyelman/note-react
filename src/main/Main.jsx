@@ -1,6 +1,5 @@
 import ReactMarkdown from "react-markdown";
 import Marked from 'marked'
-
 const Main = ({ activeNote, onUpdateNote }) => {
   const onEditField = (field, value) => {
     onUpdateNote({
@@ -20,7 +19,7 @@ const Main = ({ activeNote, onUpdateNote }) => {
           id="title"
           placeholder="Note Title"
           value={activeNote.title}
-          onChange={(e) => onEditField("title", Marked(e.target.value))}
+          onChange={(e) => onEditField("title", e.target.value)}
           autoFocus
         />
         <textarea

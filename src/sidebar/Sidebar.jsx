@@ -1,4 +1,3 @@
-import Marked from 'marked'
 const Sidebar = ({
   notes,
   onAddNote,
